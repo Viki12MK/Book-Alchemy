@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,700;1,300&display=swap');
+
+* {
+    width: 100%;
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    background-color: #c1b6b6;
+    
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: #ecd3d3;
+    display: flex;
+}
+
+header img {
+    width: 20%;
+    height: 90%;
+}
+
+header h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 5%;
+}
+
+main {
+    width: 90%;
+    padding: 2%;
+}
+
+
+.menu ul {
+    display: inline-block;
+}
+.menu li {
+    list-style-type: none;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color:#a32e2e;
+}
+
+.menu li a:hover {
+    color: #515160;
+}
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color:#ecd3d3 ;
+    display: flex;
+}
+
+.footer-details {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-details img {
+    display:flex;
+    width: 20%;
+    height: 90%;
+}
+
+.footer-menu {
+    display: inline;
+}
+
+footer li {
+    list-style-type: none;
+   
+}
+
+footer li a {
+    text-decoration: none;
+    color: #a32e2e;
+}
+
+footer li a:hover {
+    color:#515160
+}
+
+
+
+.title h1 {
+    font-size: 5em;
+}
+
+

@@ -1,0 +1,85 @@
+@import url('styles.css');
+
+
+#welcome {
+    text-align: center;  
+}
+
+#wlcome h1 {
+    padding: 2%;
+}
+
+#search {
+    
+    text-align: center;
+}
+
+#search input {
+    width: 40%;
+    height: 30px;
+}
+#search button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #515160;
+    color:azure;
+}
+
+#search button:hover {
+    background-color: #ffd3d3;
+    color:#515160
+}
+
+#books {
+    width: 100%;
+    
+}
+
+#books h2{
+   text-align: center;
+   
+} 
+
+
+.books-list {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-items: center;
+    
+}
+
+.books-list li {
+    display: flex;
+    flex: 0 0 calc(33.33% - 10px);
+    padding-bottom: 1% ;
+    
+    
+   
+}
+
+.books-list li p {
+    text-align: center;
+    padding-top: 25%;
+    font-size: 15px;
+}
+
+#delete-btn {
+    padding: 2%;
+}
+#btn-del {
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a32e2e;
+    color: azure;
+}
+
+#btn-del:hover {
+    background-color: #ffd3d3;
+    color:#515160
+}

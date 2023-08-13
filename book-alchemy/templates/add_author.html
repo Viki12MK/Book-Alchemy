@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/add-author-style.css" />
+    <title>Add Author - Library</title>
+</head>
+<body>
+    <header>
+        <img src="/static/images/MyBookLogo.png">
+        <h1>MY BOOKS LIBRARY</h1>
+    </header>
+    <main>
+        <div class="nav">
+            <ul class="menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/add_book">Add Book</a></li>
+              <li><a href="/add_author">Add Author</a></li>
+            </ul>
+          </div>
+
+        <div class="container" id="welcome">
+            <br>
+            <h1>Add Author</h1>
+            <br>
+        </div>
+
+        <div class="author-section">
+            <div class="form-author">
+                <form action="/add_author" method="POST">
+                    <label for="author_name">Author Name:</label><br>
+                    <input type="text" id="author_name" name="author_name" placeholder="Author Name" required><br><br>
+            
+                    <label for="birthdate">Birthdate:</label><br>
+                    <input type="text" id="birthdate" name="birth_date" placeholder="YYYY or YYYY-MM-DD"><br><br>
+            
+                    <label for="date_of_death">Date of Death:</label><br>
+                    <input type="text" id="date_of_death" name="date_of_death" placeholder="YYYY or YYYY-MM-DD"><br><br>
+                    
+                    <input id="add-author-btn" type="submit" value="Add Author">
+                </form>
+            </div>
+            <div class="author-collage">
+                <img src="/static/images/authors_collage.jpg">
+            </div>
+
+        </div>
+
+        
+
+        
+       
+    </main>
+    
+    <footer>
+        <div class="footer-details">
+          <img src="/static/images/MyBookLogo.png">
+          <ul class="footer-menu">
+            <li><a href="/templates/home.html">Home</a></li>
+            <li><a href="">Add Book</a></li>
+            <li><a href="">Add Author</a></li>
+          </ul>
+          <div class="title">
+            <h1>My Library</h1>
+          </div>
+          
+        </div> 
+      </footer>
+      
+</body>
+</html>

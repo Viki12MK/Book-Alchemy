@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/search_results-style.css" />
+    <title>Library - Search Results</title>
+</head>
+<body>
+    <header>
+        <img src="/static/images/MyBookLogo.png">
+        <h1>MY BOOKS LIBRARY</h1>
+      </header>  
+    <main>
+        <div class="nav">
+            <ul class="menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/add_book">Add Book</a></li>
+              <li><a href="/add_author">Add Author</a></li>
+            </ul>
+        </div>
+
+        <div class="search_section">
+            <h1>Search Results:</h1>
+            <br><br>
+            {% if message %}
+                <p>{{ message }}</p>
+            {% else %}
+            <ul>
+                {% for book in books %}
+                    <li>
+                        <img src="{{ book.cover_url }}" alt="Book Cover" style="max-width: 100px;"><br><br>
+                        {{ book.title }} <br>by {{ book.author.author_name }} <br> ({{ book.publication_year }})
+                    </li>
+                {% endfor %}
+            </ul>
+            <br>
+            {% endif %}
+            <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="footer-details">
+          <img src="/static/images/MyBookLogo.png">
+          <ul class="footer-menu">
+            <li><a href="/templates/home.html">Home</a></li>
+            <li><a href="">Add Book</a></li>
+            <li><a href="">Add Author</a></li>
+          </ul>
+          <div class="title">
+            <h1>My Library</h1>
+          </div>
+          
+        </div> 
+      </footer>
+</body>
+</html>
